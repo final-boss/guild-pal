@@ -10,8 +10,8 @@ window.GuildPal =
   application: angular.module 'guildPal',
     [
       'ionic', # Add other packages here...
-      'starter.lib', 'starter.controllers', 'starter.services'
+      'guildPal.lib', 'guildPal.controllers', 'guildPal.services'
     ]
-  controllers:  angular.module 'starter.controllers', []
-  services:     angular.module 'starter.services', []
-  lib:          angular.module 'starter.lib', []
+  controllers:  angular.module 'guildPal.controllers', []
+  services:     angular.module 'guildPal.services', []
+  lib:          angular.module 'guildPal.lib', []
