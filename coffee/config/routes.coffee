@@ -7,9 +7,20 @@ GuildPal.application
     # Set up the various states which the app can be in.
     # Each state's controller can be found in controllers.js
     $stateProvider
-      # setup an abstract state for the tabs directive
+
+      # application layout
       .state 'application',
         abstract: true
+        templateUrl: 'templates/layouts/application.html'
+        controller: 'ApplicationController'
+
+      # application layout
+      .state 'application.welcome',
+        url: '/welcome'
+        views:
+          'application':
+            templateUrl: 'templates/application/welcome.html'
+            controller: 'ApplicationWelcomeController'
 
     # if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise '/'
+    $urlRouterProvider.otherwise '/welcome'
