@@ -1,4 +1,4 @@
-Starter.controllers
+GuildPal.controllers
 
   .controller 'AccountCtrl', ($scope) ->
     $scope.settings =

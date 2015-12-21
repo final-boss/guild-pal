@@ -1,4 +1,4 @@
-Starter.application
+GuildPal.application
 
   .run ($ionicPlatform) ->
     $ionicPlatform.ready ->

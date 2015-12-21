@@ -1,4 +1,4 @@
-Starter.controllers
+GuildPal.controllers
 
   .controller 'ChatsCtrl', ($scope, Chats) ->
     # With the new view caching in Ionic, Controllers are only called

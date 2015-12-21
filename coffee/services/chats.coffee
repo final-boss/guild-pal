@@ -1,4 +1,4 @@
-Starter.services
+GuildPal.services
 
   .factory 'Chats', ->
     # Might use a resource here that returns a JSON array

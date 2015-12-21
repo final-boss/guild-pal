@@ -1,4 +1,4 @@
-Starter.application
+GuildPal.application
 
   .config ($stateProvider, $urlRouterProvider) ->
 
@@ -26,7 +26,7 @@ Starter.application
             'tab-chats':
               templateUrl: 'templates/tab-chats.html',
               controller: 'ChatsCtrl'
-      
+
       .state 'tab.chat-detail',
         url: '/chats/:chatId',
         views:

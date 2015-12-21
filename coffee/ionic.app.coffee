@@ -6,8 +6,8 @@
 # 'starter.services' is found in services.js
 # 'starter.controllers' is found in controllers.js
 
-window.Starter =
-  application: angular.module 'starter',
+window.GuildPal =
+  application: angular.module 'guildPal',
     [
       'ionic', # Add other packages here...
       'starter.lib', 'starter.controllers', 'starter.services'

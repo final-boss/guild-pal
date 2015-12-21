@@ -1,4 +1,4 @@
-Starter.lib
+GuildPal.lib
 
   .constant 'Module', -> # Inject superclasses and other dependencies here
     class Module
