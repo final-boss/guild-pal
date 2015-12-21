@@ -1,6 +1,6 @@
-# Cationic
+# Guild Pal
 
-A better Ionic starter app for a more *positive* development experience. The Cationic starter app supports SCSS/SASS, CoffeeScript, and Jasmine.
+A Guid Wars 2 stat tracking app!
 
 ### Requirements
 
@@ -10,7 +10,7 @@ A better Ionic starter app for a more *positive* development experience. The Cat
 - [Cordova](https://cordova.apache.org/)
 - [Ionic](http://ionicframework.com/)
 
-### Usage
+### Setup
 
 With Node and PhantomJS installed (via a package manager or otherwise):
 
