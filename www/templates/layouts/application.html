@@ -1,0 +1,46 @@
+<!--
+  Application Layout
+-->
+<ion-view>
+  <ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content class="main">
+      <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+
+        <ion-nav-buttons side="left">
+          <button class="button button-icon icon ion-navicon" menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+
+      <ion-view>
+        <ion-tabs class="tabs-item-hide">
+
+          <!--
+            Parent views are defined as new tabs here,
+            child views do not need to be defined as tabs
+          -->
+
+          <ion-tab href="#/tab/">
+            <ion-nav-view name="application"></ion-nav-view>
+          </ion-tab>
+
+        </ion-tabs>
+      </ion-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+      <ion-header-bar>
+        <h1 class="title" menu-close ui-sref="application.welcome">Guild Pal</h1>
+      </ion-header-bar>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</ion-view>
