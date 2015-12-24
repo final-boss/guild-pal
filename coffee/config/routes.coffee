@@ -28,7 +28,7 @@ GuildPal.application
         url: '/settings'
         
       .state 'settings.index',
-        url: '/index'
+        url: '/settings'
         views:
           'application@settings':
             templateUrl: 'templates/settings/index.html'
