@@ -12,6 +12,10 @@
           <button class="button button-icon icon ion-navicon" menu-toggle="left">
           </button>
         </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+          <button class="button button-icon icon ion-gear-a" ui-sref="settings.index">
+          </button>
+        </ion-nav-buttons>
       </ion-nav-bar>
 
       <ion-view>
@@ -24,6 +28,9 @@
 
           <ion-tab href="#/tab/">
             <ion-nav-view name="application"></ion-nav-view>
+          </ion-tab>
+          <ion-tab href="#/tab/">
+            <ion-nav-view name="application@settings"></ion-nav-view>
           </ion-tab>
 
         </ion-tabs>

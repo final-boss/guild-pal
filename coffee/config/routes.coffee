@@ -14,13 +14,26 @@ GuildPal.application
         templateUrl: 'templates/layouts/application.html'
         controller: 'ApplicationController'
 
-      # application layout
+      # application#welcome
       .state 'application.welcome',
         url: '/welcome'
         views:
           'application':
             templateUrl: 'templates/application/welcome.html'
             controller: 'ApplicationWelcomeController'
+
+      .state 'settings',
+        abstract: true
+        parent: 'application'
+        url: ''
+        
+      .state 'settings.index',
+        url: '/settings'
+        views:
+          'application@settings':
+            templateUrl: 'templates/settings/index.html'
+            controller: 'SettingsIndexController'
+
 
     # if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise '/welcome'
