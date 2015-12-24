@@ -25,7 +25,7 @@ GuildPal.application
       .state 'settings',
         abstract: true
         parent: 'application'
-        url: '/settings'
+        url: ''
         
       .state 'settings.index',
         url: '/settings'
