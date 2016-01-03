@@ -43,7 +43,7 @@ GuildPal.application
         url: ''
         views:
             'application@achievements':
-                templateUrl: 'templates/achievements/index.htm',
+                templateUrl: 'templates/achievements/index.html',
                 controller: 'AchievementsIndexController'
             
       
