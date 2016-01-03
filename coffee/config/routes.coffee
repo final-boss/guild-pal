@@ -33,7 +33,18 @@ GuildPal.application
           'application@settings':
             templateUrl: 'templates/settings/index.html'
             controller: 'SettingsIndexController'
-
-
+            
+      .state 'achievements',
+        abstract: true,
+        parent: 'application',
+        url: '/achievements'
+        
+       .state 'achievements.index',
+        url: ''
+        views:
+          'application@achievements':
+            templateUrl: 'templates/achievements/index.html',
+            controller: 'AchievementsIndexController'
+            
     # if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise '/welcome'
