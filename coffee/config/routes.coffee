@@ -25,10 +25,10 @@ GuildPal.application
       .state 'settings',
         abstract: true
         parent: 'application'
-        url: ''
+        url: '/settings'
         
       .state 'settings.index',
-        url: '/settings'
+        url: ''
         views:
           'application@settings':
             templateUrl: 'templates/settings/index.html'
