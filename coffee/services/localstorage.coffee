@@ -13,3 +13,4 @@ GuildPal.services
             getObject: (key) ->
                 JSON.parse($window.localstorage[key] || '{}')
         }
+        
