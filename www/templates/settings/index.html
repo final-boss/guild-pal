@@ -2,7 +2,7 @@
   <ion-content class="padding">
     <h1>Settings</h1>
     <ion-list>
-      <ion-item>
+      <ion-item ng-click="accountModal.show()">
         {{ hasAccountkey() ? 'Remove' : 'Add'}} Account Key
       </ion-item>
     </ion-list>
