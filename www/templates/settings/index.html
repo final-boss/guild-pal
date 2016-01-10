@@ -1,5 +1,10 @@
 <ion-view view-title="Settings">
   <ion-content class="padding">
     <h1>Settings</h1>
+    <ion-list>
+      <ion-item>
+        {{ hasAccountkey() ? 'Remove' : 'Add'}} Account Key
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

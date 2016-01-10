@@ -1,16 +1,16 @@
 GuildPal.services
-  .factory '$localstorage' , ($window) ->
+  .factory '$localstorage', ($window) ->
     {
       set: (key, value) ->
-        $window.localstorage[key] = value
+        $window.localStorage[key] = value
 
       get: (key, defaultValue) ->
-        $window.localstorage[key] || defaultValue
+        $window.localStorage[key] || defaultValue
 
       setObject: (key, value) ->
-        $window.localstorage[key] = JSON.stringify value
+        $window.localStorage[key] = JSON.stringify value
                 
       getObject: (key) ->
-        JSON.parse($window.localstorage[key] || '{}')
+        JSON.parse($window.localStorage[key] || '{}')
     }
         

@@ -15,3 +15,4 @@ window.GuildPal =
   controllers:  angular.module 'guildPal.controllers', []
   services:     angular.module 'guildPal.services', []
   lib:          angular.module 'guildPal.lib', []
+  
