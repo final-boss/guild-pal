@@ -1,13 +1,19 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button } from 'react-native'
 
-import PrimaryNav from './config/router'
-import LandingPage from './screens/LandingPage'
+import EnterAPIKey from './EnterAPIKey'
 
 export default class App extends React.Component {
   render () {
+    const { navigate } = this.props.navigation
     return (
-      <PrimaryNav />
+      <View style={styles.container}>
+        <Text>Guild Pal Landing</Text>
+        <Button 
+          title="Add Personal API Key Here"
+          onPress={() => navigate('EnterAPIKey') } 
+        />
+      </View>
     )
   }
 }
