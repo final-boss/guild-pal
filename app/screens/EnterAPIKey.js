@@ -1,8 +1,5 @@
 import React from 'react'
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native'
-//import  Toast, {DURATION} from 'react-native-easy-toast'
-
-import APIHelper from '../Helpers/APIHelper'
+import { View, Text, TextInput, StyleSheet, AsyncStorage } from 'react-native'
 
 class EnterAPIKey extends React.Component {
 
@@ -12,14 +9,23 @@ class EnterAPIKey extends React.Component {
 
     constructor(props) {
         super(props)
-        this.state = { api: '' }
-        APIHelper.apiKey = 'It Works'
     }
 
-    saveAPIKey(){
-        APIHelper.apiKey = this.state.api
-        //this.refs.toast.show('hello world!')
-        this.props.navigation.goBack()
+    async saveKey(api) {
+        try {
+             await AsyncStorage.setItem('userAPIKey', api)
+        } catch (error) {
+            console.log("Error saving data" + error)
+        }
+    }
+
+    async getKey() {
+        try {
+            const api = await AsyncStorage.getItem('userAPIKey')
+            this.setState({retrivedAPIKey: api})
+        } catch (error) {
+            console.log("Error retrieving data" + error)
+        }
     }
 
     render() {
@@ -30,16 +36,9 @@ class EnterAPIKey extends React.Component {
                     autoFocus={ true }
                     placeholder="API Key here"
                     onChangeText={
-                        (api) => this.setState({api})
+                        (api) => this.saveKey(api)
                     }
                 />
-                <Button  
-                    title= 'Back To Home Page'
-                    onPress={
-                        () => this.saveAPIKey()
-                    }
-                />
-                
             </View>
         );
     }
