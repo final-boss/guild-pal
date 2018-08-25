@@ -8,7 +8,6 @@ const PrimaryNav = createStackNavigator({
    LandingPage: { screen: LandingPage},
     EnterAPIKey: { screen: EnterAPIKey }
 }, {
-    //headerMode: 'none',
     initialRouteName: 'LandingPage'
 })
 
