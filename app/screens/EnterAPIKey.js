@@ -19,15 +19,6 @@ class EnterAPIKey extends React.Component {
         }
     }
 
-    async getKey() {
-        try {
-            const api = await AsyncStorage.getItem('userAPIKey')
-            this.setState({retrivedAPIKey: api})
-        } catch (error) {
-            console.log("Error retrieving data" + error)
-        }
-    }
-
     render() {
         return (
             <View style={styles.container} >
