@@ -16,3 +16,6 @@ jobs:
     - stage: lint
       name: "Lint"
       script: yarn lint
+
+notifications:
+  email: false
