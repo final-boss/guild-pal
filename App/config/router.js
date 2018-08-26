@@ -5,10 +5,10 @@ import EnterAPIKey from '../screens/EnterAPIKey'
 import LandingPage from '../screens/LandingPage'
 
 const PrimaryNav = createStackNavigator({
-   LandingPage: { screen: LandingPage},
-    EnterAPIKey: { screen: EnterAPIKey }
+  LandingPage: { screen: LandingPage},
+  EnterAPIKey: { screen: EnterAPIKey }
 }, {
-    initialRouteName: 'LandingPage'
+  initialRouteName: 'LandingPage'
 })
 
 export default PrimaryNav

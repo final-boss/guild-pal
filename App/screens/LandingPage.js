@@ -7,9 +7,9 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Guild Pal Landing</Text>
-        <Button 
-          title="Add Personal API Key Here"
-          onPress={() => navigate('EnterAPIKey') } 
+        <Button
+          title='Add Personal API Key Here'
+          onPress={() => navigate('EnterAPIKey')}
         />
       </View>
     )
