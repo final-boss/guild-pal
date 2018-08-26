@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - '10.8.0'
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+jobs:
+  include:
+    - stage: test
+      name: "Tests"
+      script: yarn test
+    - stage: lint
+      name: "Lint"
+      script: yarn lint
