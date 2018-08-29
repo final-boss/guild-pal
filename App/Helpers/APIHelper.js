@@ -1,9 +1,8 @@
-import React from 'react'
 import {AsyncStorage} from 'react-native'
-class APIHelper extends React.Component {
-  async saveKey (api) {
+class APIHelper {
+  async saveKey (userAPIKey) {
     try {
-      await AsyncStorage.setItem('userAPIKey', api)
+      await AsyncStorage.setItem('userAPIKey', userAPIKey)
     } catch (error) {
       console.log('Error saving data' + error)
     }
@@ -11,8 +10,8 @@ class APIHelper extends React.Component {
 
   async getKey () {
     try {
-      const api = await AsyncStorage.getItem('userAPIKey')
-      this.setState({retrivedAPIKey: api})
+      const userAPIKey = await AsyncStorage.getItem('userAPIKey')
+      return userAPIKey
     } catch (error) {
       console.log('Error retrieving data' + error)
     }
