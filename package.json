@@ -13,8 +13,7 @@
     "fix": "standard --fix"
   },
   "jest": {
-    "preset": "jest-expo",
-    "setupTestFrameworkScriptFile": "<rootDir>setupTests.js"
+    "preset": "jest-expo"
   },
   "standard": {
     "env": {
@@ -31,10 +30,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-react-native": "^4.0.1",
-    "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16.3": "^1.2.0",
     "jest-expo": "~27.0.0",
-    "react-native-mock": "^0.3.1",
     "react-native-scripts": "1.14.0",
     "react-test-renderer": "16.3.1",
     "snazzy": "^7.1.1",
