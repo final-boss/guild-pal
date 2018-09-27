@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import LandingPage from './LandingPage'
 import {Button} from 'react-native'
@@ -28,3 +29,5 @@ describe('LandingPage.js', () => {
   //   expect(mockCallBack.mock.calls.length).toEqual(1)
   // })
 })
+=======
+>>>>>>> parent of 7d9a8b5... Added tests
