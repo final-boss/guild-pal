@@ -3,7 +3,9 @@ import App from './index'
 
 import renderer from 'react-test-renderer'
 
-it('renders without crashing', () => {
-  const rendered = renderer.create(<App />).toJSON()
-  expect(rendered).toBeTruthy()
+describe('index.js', () => {
+  it('renders without crashing', () => {
+    const rendered = renderer.create(<App />).toJSON()
+    expect(rendered).toBeTruthy()
+  })
 })
